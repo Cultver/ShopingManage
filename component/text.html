@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class = "header00">
+    <h1>记事本</h1>
+    <input placeholder="请输入任务" class = "new-todo"/>
+    <button class = "add">添加任务</button>
+    <meta charset="UTF-8">
+    <title>记事本</title>
+</head>
+<section class = "main">
+    <ul>
+        <li>
+            <div>
+                <span class="index">1.</span><label>running for 20mins</label>
+                <button class="destory"></button>
+            </div>
+        </li>
+    </ul>
+</section>
+<div id = 'app'>
+    {{ name }}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+const app =  new Vue({
+    el:"#app",
+    data:{
+        name:'test'
+    }
+})
+</script>
+<body>
+
+</body>
+</html>
